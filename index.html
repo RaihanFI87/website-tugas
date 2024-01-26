@@ -1,0 +1,74 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+    <img src="raihan.jpg" style="width: 100%;"
+</div>
+
+<div class="w3-bar w3-brown w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Nissan')">Nissan</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Ferrari')">Ferrari </button>
+    <button class="w3-bar-item w3-button" onclick="openKota('McLaren')">McLaren </button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Lamborghini')">Lamborghini </button>
+    </div>
+	
+
+    <div id="Profile" class="w3-container kota w3-card-4 w3-brown" style="display:none; opacity: 100%;">
+        <center>
+            <h1><b>About Me</h1>
+        <img src="rehanfc.jpg"style=": 25%;">
+        </center>
+        <p>
+    </div>
+
+	<div id="Nissan" class="w3-container kota w3-animate-fading w3-card-4 w3-brown" style="display:none; opacity: 100%;">
+        <center>
+            <h1><b>Nissan GTR R35</h1>
+        <img src="gtr r35.jpg" style="width: 25%;">
+        </center>
+        <p><center>Mobil Nissan GTR R35 merupakan salah satu kendaraan keluaran Nissan yang dikenal dengan sebutan Godzilla.
+        Bahkan, mobil ini pun dibekali dengan performa mesin yang lengkap dan juga buas. Termasuk, dari segi tampilan eksterior dan kemewahan interiornya.
+        Tentunya, pengendara dan penumpang akan dimanjakan dengan berbagai kenyamanan yang disuguhkan oleh mobil yang satu ini.</center>
+    </div>
+
+    <div id="Ferrari" class="w3-container kota w3-animate-bottom w3-card-4 w3-brown" style="display:none; opacity: 100%;">
+        <center>
+            <h1 ><b>Ferrari 488 Spider</h1>
+        <img src="ferrari 488 spider.jpg" style="width: 25%;">
+        </center>
+        <P><center>Ferrari 488 adalah mobil sport bermesin tengah yang diproduksi oleh pabrikan mobil Italia Ferrari. 
+        Mobil tersebut menggantikan 458, menjadi Ferrari bermesin tengah pertama yang menggunakan V8 turbocharged sejak F40</center>
+	</div>	
+
+    <div id="McLaren" class="w3-container kota w3-animate-top w3-card-4 w3-brown" style="display:none; opacity: 100%;">
+		<center>
+            <h1><b>Mclaren P1</h1>
+        <img src="mclaren p1.jpg" style="width: 25%;">
+        </center>
+        <p><center>McLaren P1 adalah mobil sport plug in hybrid produksi terbatas yang diproduksi oleh pabrikan mobil Inggris, McLaren Automotive. 
+        Debut di Paris Motor Show 2012,penjualan P1 dimulai di Inggris pada Oktober 2013 dan semua 375 unit terjual habis pada bulan November.</center>
+	</div>	
+
+	<div id="Lamborghini" class="w3-container kota w3-animate-zoom w3-card-4 w3-brown" style="display:none; opacity: 100%;">
+		<center>
+            <h1 ><b>Lamborghini Veneno Roadster</h1>
+        <img src="lamborghini veneno roadster.jpg" style="width: 25%;">
+        </center>
+        <p><center>Lamborghini Veneno adalah mobil sport performa tinggi produksi terbatas yang diproduksi oleh pabrikan mobil Italia Lamborghini. 
+        Berdasarkan Lamborghini Aventador, Veneno dikembangkan untuk merayakan ulang tahun ke-50 Lamborghini. 
+        Itu diperkenalkan di Geneva Motor Show 2013.Saat diperkenalkan, harganya US$4.000.000, menjadikannya salah satu mobil produksi termahal di dunia.</center>  
+    </div>
+
+<script>
+    function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(namakota).style.display = "block";
+    }
+    </script>
+</html>
